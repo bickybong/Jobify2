@@ -1,13 +1,14 @@
 import React from "react";
-import logo from "../assets/images/logo.svg";
+import { Logo } from "../components";
 import main from "../assets/images/main.svg";
 import styled from "styled-components";
+import Wrapper from "../assets/wrappers/LandingPage";
 
 function Landing() {
   return (
-    <main>
+    <Wrapper>
       <nav>
-        <img src={logo} alt="jobify" class="logo" />
+        <Logo />
       </nav>
       <div class="container">
         <div class="info">
@@ -23,10 +24,8 @@ function Landing() {
         </div>
         <img src={main} alt="job hunt" class="img main-img" />
       </div>
-    </main>
+    </Wrapper>
   );
 }
-
-const Wrapper = styled.main``;
 
 export default Landing;
