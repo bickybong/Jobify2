@@ -3,6 +3,7 @@ import { Logo } from "../components";
 import main from "../assets/images/main.svg";
 import styled from "styled-components";
 import Wrapper from "../assets/wrappers/LandingPage";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 
 function Landing() {
   return (
@@ -20,7 +21,9 @@ function Landing() {
             selfies. Try-hard tbh yuccie, narwhal marxism street art sus retro
             heirloom craft beer umami gatekeep tonx brunch microdosing.
           </p>
-          <button class="btn btn-hero">Login</button>
+          <Link to="/register" class="btn btn-hero">
+            Register
+          </Link>
         </div>
         <img src={main} alt="job hunt" class="img main-img" />
       </div>
