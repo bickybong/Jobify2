@@ -11,8 +11,8 @@ function Landing() {
       <nav>
         <Logo />
       </nav>
-      <div class="container">
-        <div class="info">
+      <div className="container">
+        <div className="info">
           <h1>
             job <span>tracking</span> app
           </h1>
@@ -21,11 +21,11 @@ function Landing() {
             selfies. Try-hard tbh yuccie, narwhal marxism street art sus retro
             heirloom craft beer umami gatekeep tonx brunch microdosing.
           </p>
-          <Link to="/register" class="btn btn-hero">
+          <Link to="/register" className="btn btn-hero">
             Register
           </Link>
         </div>
-        <img src={main} alt="job hunt" class="img main-img" />
+        <img src={main} alt="job hunt" className="img main-img" />
       </div>
     </Wrapper>
   );
